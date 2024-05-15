@@ -1,15 +1,13 @@
 package src;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
-        Conversion test = new Conversion();
 
-        double convert = test.convert("EUR", "GBP", 3);
-        double conversionRate = test.conversionRate("EUR", "GBP");
-
-        System.out.println("Result:" + convert);
-        System.out.println("Rate:" + conversionRate);
+        Menu.createMenu("USD", new ArrayList<>(List.of("BRL", "GBP", "EUR")));
 
     }
 }

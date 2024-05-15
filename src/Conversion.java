@@ -14,7 +14,7 @@ public class Conversion {
 
     private static final String APIKEY = "7ca0225e9b553ead1296109c";
 
-    public double convert (String baseCurrency, String targetCurrency, double ammount) {
+    public static double convert (String baseCurrency, String targetCurrency, double ammount) {
         String baseURL = "https://v6.exchangerate-api.com/v6/" + APIKEY + "/pair/" + baseCurrency + "/" + targetCurrency + "/" + ammount;
 
         try {
@@ -36,7 +36,7 @@ public class Conversion {
         }
     }
 
-    public double conversionRate (String baseCurrency, String targetCurrency) {
+    public static double conversionRate (String baseCurrency, String targetCurrency) {
         String baseURL = "https://v6.exchangerate-api.com/v6/" + APIKEY + "/pair/" + baseCurrency + "/" + targetCurrency;
 
         try {
